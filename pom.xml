@@ -1,0 +1,34 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.example.db2md</groupId>
+  <artifactId>db2md</artifactId>
+  <packaging>pom</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>db2md</name>
+  <url>http://maven.apache.org</url>
+  <modules>
+    <module>model</module>
+    <module>adaptor</module>
+    <module>core</module>
+    <module>assembly</module>
+  </modules>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <assembly.name>db2md</assembly.name>
+    <jcommander.version>1.78</jcommander.version>
+  </properties>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.beust</groupId>
+        <artifactId>jcommander</artifactId>
+        <version>${jcommander.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+
+
+</project>
